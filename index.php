@@ -13,6 +13,7 @@
 </nav>
 <div class='login'>
 <div class='form'>
+  <!--Register-->
   <form class='register-form'>
   <input type='text' placeholder='User Name'>
   <input typer='password' placeholder='Password'>
@@ -21,10 +22,11 @@
     <p class='message'>Already Registered?<a href='#'> Login</a>
     </p>
   </form>
+  <!--Log In-->
   <form class='login-form'>
   <input type='text' placeholder='User Name'>
   <input typer='password' placeholder='Password'>
-    <button type='button'>Log In</button>
+    <button type='button' class='filter' onclick="document.location='filter.php'">Log In</button>
     <p class='message'>Not Registered?<a href='#'> Sign up</a>
     <p class='message'><a href='forgotpassword.php'>Forgot your password?</a>
     </p>

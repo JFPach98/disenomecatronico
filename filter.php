@@ -11,25 +11,55 @@
 <nav class="navbar navbar-light bg-light">
   <span class="navbar-brand mb-0 h1">Digital Twin</span>
 </nav>
-<div class='login'>
-<div class='form'>
-  <form class='register-form'>
-  <input type='text' placeholder='User Name'>
-  <input typer='password' placeholder='Password'>
-  <input typer='email' placeholder='User email'>
-    <button type='button'>Register</button>
-    <p class='message'>Already Registered?<a href='#'> Login</a>
-    </p>
-  </form>
-  <form class='login-form'>
-  <input type='text' placeholder='User Name'>
-  <input typer='password' placeholder='Password'>
-    <button type='button'>Log In</button>
-    <p class='message'>Not Registered?<a href='#'> Sign up</a>
-    <p class='message'><a href='forgotpassword.php'>Forgot your password?</a>
-    </p>
-  </form>
-</div>
+<div class="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>Bootstrap Sidebar</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+            <p>Dummy Heading</p>
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Portfolio</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
 </div>
   <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
   <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->

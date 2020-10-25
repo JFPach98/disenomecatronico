@@ -65,7 +65,18 @@ body
     color: #00C0E6;
     text-decoration: none;
 }
+.form .filter a
+{
+    margin: 15px 0 0;
+    color: #fff;
+    font-size: 12px;
+}
 .register-form
 {
     display: none;
+}
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
 }
