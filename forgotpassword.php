@@ -12,6 +12,7 @@
   <span class="navbar-brand mb-0 h1">Digital Twin</span>
 </nav>
 <div class='login'>
+    <!--password restore-->
 <div class='form'>
   <form class='forgot-password'>
   <input type='text' placeholder='email or username'>
