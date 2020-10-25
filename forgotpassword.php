@@ -13,21 +13,10 @@
 </nav>
 <div class='login'>
 <div class='form'>
-  <form class='register-form'>
-  <input type='text' placeholder='User Name'>
-  <input typer='password' placeholder='Password'>
-  <input typer='email' placeholder='User email'>
-    <button type='button'>Register</button>
-    <p class='message'>Already Registered?<a href='#'> Login</a>
-    </p>
-  </form>
-  <form class='login-form'>
-  <input type='text' placeholder='User Name'>
-  <input typer='password' placeholder='Password'>
-    <button type='button'>Log In</button>
-    <p class='message'>Not Registered?<a href='#'> Sign up</a>
-    <p class='message'><a href='forgotpassword.php'>Forgot your password?</a>
-    </p>
+  <form class='forgot-password'>
+  <input type='text' placeholder='email or username'>
+    <button type='button'>Send email</button>
+    <p class='message'>Go back to <a href='index.php'>Log In</a>
   </form>
 </div>
 </div>
