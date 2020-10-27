@@ -101,7 +101,7 @@
                     <td>M</td>
                     <td>High</td>
                     <td>2020/07/12</td>
-                    <td><a href=''>Stable</a></td>
+                    <td><a href='name/index.php'>Profile</a></td>
                 </tr>
                 <tr>
                     <td>Peter Reynolds</td>
