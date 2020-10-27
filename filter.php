@@ -10,80 +10,51 @@
   <link rel="stylesheet" href="https://stackpath.bootsrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" >
 </head>
-<body>
+<body style='background-image: url(images/cool-background.png)'>
 
-<div class="d-flex" id="wrapper">
 
-<!-- Sidebar -->
-<div class="bg-light border-right" id="sidebar-wrapper">
-  <div class="sidebar-heading">Digital Twin </div>
-  <div class="list-group list-group-flush">
-    <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
-    <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
-    <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
-    <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
-    <a href="profile.php" class="list-group-item list-group-item-action bg-light">Profile</a>
-    <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
-  </div>
-</div>
-<!-- /#sidebar-wrapper -->
 
 <!-- Page Content -->
 <div id="page-content-wrapper">
+  <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+                        <a class="navbar-brand" href="#">
+                            <h1 class="tm-site-title mb-0">Digital Twin
+                            </h1>
+                        </a>
+                        <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-    <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="../filter.php">Dashboard
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+</li>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.php">Log Out<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container-fluid">
-    <h1 class="mt-4">Dashboard</h1>
-    <div class="card w-60" style="width: 18rem; float: left; margin-top: 10px; margin-bottom: 10px; margin-right: 10px;">
-        <div class="card-body">
-            <h5 class="card-title">Alerts in the last 24 hours:</h5>
-            <h6 class="card-subtitle mb-2 text-muted">None</h6>
-            <p class="card-text"></p>
-            <a href="#" class="card-link">Last week</a>
-            <a href="#" class="card-link">Last month</a>
-        </div>
-    </div>
-    <div class="card w-60" style="width: 18rem; float: left; margin: 10px">
-        <div class="card-header">
-            High Risk patients
-        </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">John Doe</li>
-            <li class="list-group-item">Peter Reynolds</li>
-            <li class="list-group-item">Mary Doe</li>
-        </ul>
-    </div>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex" href="index.php">
+                                        <i class="far fa-user mr-2 tm-logout-icon"></i>
+                                        <span>Log out</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+  
     <div class='container mb-5 mt-3' style='position: relative;'>
-        <table class='table table-striped table-bordered mydatatable' style='width: 100%; background: white'; id='mydatatable'>
+        <table class='table table-striped table-bordered mydatatable' style='width: 100%; background: white;'; id='mydatatable'>
             <thead>
                 <tr>
                     <th>Name</th>
@@ -96,12 +67,12 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>John Doe</td>
-                    <td>36</td>
-                    <td>M</td>
-                    <td>High</td>
+                    <td>Juana Velázquez</td>
+                    <td>25</td>
+                    <td>F</td>
+                    <td>Low</td>
                     <td>2020/07/12</td>
-                    <td><a href='name/index.php'>Profile</a></td>
+                    <td><a href='name/patient1.php'>Profile</a></td>
                 </tr>
                 <tr>
                     <td>Peter Reynolds</td>
@@ -125,7 +96,7 @@
                     <td>M</td>
                     <td>Medium</td>
                     <td>2020/10/9</td>
-                    <td><a href=''>Stable</a></td>
+                    <td><a href='name/patient2.php'>Profile</a></td>
                 </tr>
                 <tr>
                     <td>María Espinoza</td>
@@ -137,14 +108,14 @@
                 </tr>
                 <tr>
                     <td>Marie Sue</td>
-                    <td>36</td>
-                    <td>M</td>
-                    <td>Low</td>
+                    <td>70</td>
+                    <td>F</td>
+                    <td>High</td>
                     <td>2020/07/12</td>
-                    <td><a href=''>Stable</a></td>
+                    <td><a href='name/patient3.php'>Profile</a></td>
                 </tr>
             </tbody>
-            <tfoot>
+            <tfoot style= 'display: none;'>
                     <th>Name</th>
                     <th>Age</th>
                     <th>Sex</th>

@@ -32,7 +32,7 @@
                 <div class="col-12">
                     <nav class="navbar navbar-expand-xl navbar-light bg-light">
                         <a class="navbar-brand" href="#">
-                            <h1 class="tm-site-title mb-0">Juana Velázquez</h1>
+                            <h1 class="tm-site-title mb-0">Mary Sue</h1>
                         </a>
                         <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +42,7 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mx-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="#">Patient's Digital Twin
+                                    <a class="nav-link active" href="../filter.php">Dashboard
                                         <span class="sr-only">(current)</span>
                                     </a>
                                 </li>
@@ -97,13 +97,13 @@
                             </div>
                         </div>
                         <p>Last day:</p>
-                        <p>Average Temperature: 37 °C</p>
-                        <p>Average Cardiac Rhythm: 90 bpm</p>
-                        <p>Average Oxygen Saturation: 94%</p>
+                        <p>Average Temperature: 38.2 °C</p>
+                        <p>Average Cardiac Rhythm: 115 bpm</p>
+                        <p>Average Oxygen Saturation: 85%</p>
                         <p>Last month:</p>
-                        <p>Average Temperature: 36.8 °C</p>
-                        <p>Average Cardiac Rhythm: 95 bpm</p>
-                        <p>Average Oxygen Saturation: 95%</p>
+                        <p>Average Temperature: 37.8 °C</p>
+                        <p>Average Cardiac Rhythm: 93 bpm</p>
+                        <p>Average Oxygen Saturation: 90%</p>
                         <canvas id="lineChart1" style='display: none'></canvas>
                     </div>
                 </div>
@@ -113,12 +113,12 @@
                         <canvas id="barChart" style='display: none;'></canvas>
                     </div>
                 </div>-->
-                <div class="tm-col tm-col-small" style='background: green;'>
+                <div class="tm-col tm-col-small" style='background: red;'>
                     <div class="bg-white tm-block h-100">
                         <h2 class="tm-block-title">Status</h2>
                         <canvas id="pieChart" class="chartjs-render-monitor" style='display: none' ></canvas>
-                        <img src="/images/patient.jpg" alt="Italian Trulli" style="width:200px;height:150px;">
-                        <p>Stable</p>
+                        <img src="/images/oldwoman.jpg" alt="Italian Trulli" style="width:149px;height:200px;">
+                        <p>High risk</p>
                     </div>
                 </div>
 
@@ -126,7 +126,7 @@
                     <div class="bg-white tm-block h-100">
                         <div class="row">
                             <div class="col-8">
-                                <h2 class="tm-block-title d-inline-block">Top Product List</h2>
+                                <h2 class="tm-block-title d-inline-block">Personal information</h2>
 
                             </div>
                             <div class="col-4 text-right">
@@ -135,26 +135,26 @@
                         </div>
                         <ol class="tm-list-group tm-list-group-alternate-color tm-list-group-pad-big">
                             <li class="tm-list-group-item">
-                                Donec eget libero
+                                Age: 70
                             </li>
                             <li class="tm-list-group-item">
-                                Nunc luctus suscipit elementum
+                                Sex: F
                             </li>
                             <li class="tm-list-group-item">
-                                Maecenas eu justo maximus
+                                Weight: 100 kg
                             </li>
                             <li class="tm-list-group-item">
-                                Pellentesque auctor urna nunc
+                                Height: 1.62 m
                             </li>
                             <li class="tm-list-group-item">
-                                Sit amet aliquam lorem efficitur
+                                Prescription Drugs: paracetamol
                             </li>
                             <li class="tm-list-group-item">
-                                Pellentesque auctor urna nunc
+                                Phone number: 123 456 7890
                             </li>
                             <li class="tm-list-group-item">
-                                Sit amet aliquam lorem efficitur
-                            </li>
+                                Email: muriel_cour@gmail.com
+                            </li>   
                         </ol>
                     </div>
                 </div>
@@ -174,15 +174,8 @@
                     <div class="bg-white tm-block h-100">
                         <h2 class="tm-block-title">Instructions</h2>
                         <ol class="tm-list-group">
-                            <li class="tm-list-group-item">Always wash your hands properly</li>
-                            <li class="tm-list-group-item">Maintain a safe distance</li>
-                            <li class="tm-list-group-item">Wear a mask if social distancing is not an option</li>
-                            <li class="tm-list-group-item">Stay at home</li>
-                            <li class="tm-list-group-item">If you have Covid-19 symptoms, seek medical attention</li>
-                            <li class="tm-list-group-item">Be aware of fake news</li>
-                            <li class="tm-list-group-item">Meditate</li>
-                            <li class="tm-list-group-item">Ask for emotional support, everyone needs it</li>
-                            <li class="tm-list-group-item">Live a healthy life</li>
+                            <li class="tm-list-group-item" href='#'>Call emergency contact</li>
+                            <li class="tm-list-group-item" href='#'>Call ambulance</li>
                         </ol>
                     </div>
                 </div>
@@ -209,7 +202,7 @@
     <!-- https://fullcalendar.io/ -->
     <script src="js/bootstrap.min.js"></script>
     <!-- https://getbootstrap.com/ -->
-    <script src="js/tooplate-scripts.js"></script>
+    <script src="js/tooplate-scripts2.js"></script>
     <script>
         let ctxLine,
             ctxBar,
